@@ -1,0 +1,84 @@
+<!doctype html>
+<html style="font-size:100px;">
+<head>
+	<meta charset="utf-8">
+	<title>确认</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/qch.css">
+</head>
+<body>
+	<div class="p3_box">
+		<div class="p3_top">
+			<span><<em>返回</em></span>
+			抽奖结果
+			<div class="p3_top_r">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>	
+		</div>
+		<div class="p3_con1">
+			恭喜您，启辰车模已经属于您了！
+		</div>
+		<div class="p3_con2">
+			<div class="p3_con21">
+				请保持在本页，凭页面代码到展台领取奖品!
+			</div>
+			<div class="p3_con22">
+				<img src="images/bg03.jpg" alt="">
+				<ul>
+					<li>Q</li>
+					<li>C</li>
+					<li>0</li>
+					<li>0</li>
+					<li>1</li>
+				</ul>
+			</div>
+			<img src="images/qc_07.jpg" alt="">
+		</div>
+		<dl class="p3_con4">
+			<dt>不够过瘾？</dt>
+			<dd>那么请留下您的联系方式，就有机会抽取启辰启辰R30晨风一年使用大奖哦!</dd>
+			<dd class="p3_btn1">启辰开回家</dd>
+			
+		</dl>
+		<div class="p3_bottom">
+			<span>分享好友攒人品:</span>
+			<span><img src="images/weixin.png" alt=""></span>
+			<span><img src="images/xlwb.png" alt=""></span>
+			<span><img src="images/txwb.png" alt=""></span>	
+		</div>
+	</div>
+	<div class="p3_mask">
+		
+	</div>
+	<dl class="p3_mask_txt">
+		<img src="images/share_pop.png" alt="">
+	</dl>
+</body>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/ort.js"></script>
+<script type="text/javascript">
+	$('.p3_top em').click(function () {
+			window.history.back();
+	})
+	document.onclick = function () {
+		$('.p3_mask').hide();
+		$('.p3_mask_txt').hide();
+	}
+	var arr2=['0','1','2','3','4','5','6','7','8','9'];
+	var num=[];
+	for (var i = 0; i < 3; i++) {
+		num[i] = Math.floor(Math.random()*10);	
+	};
+	$('.p3_con22 li').get(2).innerHTML=num[0];
+	$('.p3_con22 li').get(3).innerHTML=num[1];
+	$('.p3_con22 li').get(4).innerHTML=num[2];
+
+	$('.p3_btn1').click(function () {
+		window.open('p6.html','_self');
+	})
+</script>
+</html>

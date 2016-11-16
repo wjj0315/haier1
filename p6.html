@@ -1,0 +1,90 @@
+<!doctype html>
+<html style="font-size:100px;">
+<head>
+	<meta charset="utf-8">
+	<title>标题</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/qch.css">
+
+</head>
+<body>
+	<div class="p6_box">
+		<div class="p6_top">
+			<span><<em>返回</em></span>
+			启辰开回家
+			<div class="p6_top_r">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>	
+		</div>
+		<div class="p6_img1"><img class="img" src="images/qckhj.png" alt=""></div>
+		<p class="p">&nbsp;考验人品的时候到了，只要留下你的姓名和联系方式就有机会和抽取启辰R30、启辰晨风一年使用权大奖。</p>
+		<p class="p1"><input type="text" name="" value="" placeholder="请输入姓名："></p>
+		<p class="p2"><input type="text" name="" value="" placeholder="请输入手机号码："></p>
+		<p class="p3">提交</p>
+		<p class="p4">活动规则</p>
+		<div class="tubiao">
+			<p class="p7">分享好友积攒人品：</p>
+			<p><a href="###"><img src="images/txwb.png" alt=""></a></p>
+			<p><a href="###"><img src="images/weixin.png" alt=""></a></p>
+			<p><a href="###"><img src="images/xlwb.png" alt=""></a></p>
+		</div>
+
+		<div class="p6_mask">
+			
+		</div>
+		<div class="p6_guize">
+			<div class="p6_guize_tit">活动规则：</div>
+			<br>
+			<p class="p6_p1">1、</p>
+			<div class="p6_div1">广州车展期间：关注启辰官方微博，参与“马上有礼，辰心放送”活动并留下本人姓名及手机号码，即可曾参与</div>
+			<p>2、</p>
+			<div>11月21只11月29日，每天抽取一台启辰R30一年使用权大奖（现场对经）。11月29日抽取终极大奖：一台启辰晨风一年使用权</div>
+			<p>3、</p>
+			<div>每天16：00对当天所有参与者进行抽选，抽选中的参与者若不在现场，将取消中奖者资格并继续抽奖（启辰晨风一年使用权除外）</div>
+			<p>4、</p>
+			<div>终极大奖从车展期间所有者中抽取后续联系进行兑奖。</div>
+			<p>5、</p>
+			<div>此活动每人仅限参与一次；</div>
+			<p>6、</p>
+			<div>本次活动最终解释权贵东风日产启辰所有。</div>
+
+			<dl>
+				<dd class="p6_btn1">知道了</dd>
+			</dl>
+		</div>
+		<div class="success">
+			<p class="p5">提交成功!</p>
+			<p class="p6">说好的16:00现场抽奖，启辰展台<br>与您不见不散！</p>
+			<p class="p8"><em>不见不散</em></p>
+		</div>	
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/ort.js"></script>
+<script type="text/javascript">
+	$('.p6_top em').click(function () {
+		window.history.back();
+	})
+	$('.p3').click(function () {
+		$('.p6_mask').show();
+		$('.success').show();	
+	})
+	$('.p8').click(function () {
+		window.open('p1.html','_self');
+	})
+	$('.p4').click(function () {
+		$('.p6_mask').show();
+		$('.p6_guize').show();
+		$('.p6_btn1').click(function () {
+			$('.p6_mask').hide();
+			$('.p6_guize').hide();
+		})
+	})
+
+
+</script>
+</html>

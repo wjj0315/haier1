@@ -1,0 +1,66 @@
+<!doctype html>
+<html style="font-size:100px;">
+<head>
+	<meta charset="utf-8">
+	<title>确认</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/qch.css">
+</head>
+<body>
+	<div class="p4_box">
+		<div class="p4_top">
+			<span><<em>返回</em></span>
+			抽奖结果
+			<div class="p4_top_r">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>	
+		</div>
+		<div class="p4_con1">人品不错哦!</div>
+		<div class="p4_con2">恭喜您抽中价值<span></span>的手机话费!请留下联系方式，24小时内话费将为您送上，请留意短信，谢谢!</div>
+		<div class="p4_con3"><img src="images/y10.png" alt=""></div>
+		<dl class="p4_con4">
+			<dt>请输入手机号码24小时内为您充值</dt>
+			<dd class="p4_shuru"><input type="text" name="" value=""></dd>
+			<dd class="p4_btn1">确认提交</dd>
+		</dl>
+		<div class="p4_bottom">
+			<span>分享好友攒人品:</span>
+			<span><img src="images/weixin.png" alt=""></span>
+			<span><img src="images/xlwb.png" alt=""></span>
+			<span><img src="images/txwb.png" alt=""></span>	
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/ort.js"></script>
+<script type="text/javascript">
+	$('.p4_top em').click(function () {
+			window.history.back();
+	})
+	var arr1 = ['10元','20元','30元'];
+	var arr2 = ['images/y10.png','images/y20.png','images/y30.png'];
+	var ran1 = Math.floor(Math.random()*3);
+	console.log(ran1);
+	if(ran1==0){
+		$('.p4_con2 span').get(0).innerHTML = arr1[0];
+		$('.p4_con3 img').get(0).src=arr2[0];
+	}
+	else if(ran1==1){
+		$('.p4_con2 span').get(0).innerHTML = arr1[1];
+		$('.p4_con3 img').get(0).src=arr2[1];
+	}
+	else{
+		$('.p4_con2 span').get(0).innerHTML = arr1[2];
+		$('.p4_con3 img').get(0).src=arr2[2];
+	}
+	$('.p4_btn1').click(function () {
+		window.open('p1.html','_self');
+	})
+
+
+</script>
+</html>
